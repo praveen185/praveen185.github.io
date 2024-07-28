@@ -1,0 +1,45 @@
+[[redirects]]
+  from = "/api/*"
+  to = "http://devansh-customer-be.eu-north-1.elasticbeanstalk.com/customers/v1/:splat"
+  status = 200
+  force = true
+
+
+
+[[redirects]]
+  from = "/api/*"
+  to = "http://devansh-product-be.eu-north-1.elasticbeanstalk.com/product/v1/products:splat"
+  status = 200
+  force = true
+
+
+
+[[redirects]]
+  from = "/api/*"
+  to = "http://devansh-customer-be.eu-north-1.elasticbeanstalk.com/customer/v1/daily-entry/:splat"
+  status = 200
+  force = true
+
+
+
+[[redirects]]
+  from = "/api/*"
+  to = "http://devansh-customer-be.eu-north-1.elasticbeanstalk.com/customer/v1/purchaseHistory/:splat"
+  status = 200
+  force = true
+
+
+
+[[redirects]]
+  from = "/api/*"
+  to = "http://devansh-customer-be.eu-north-1.elasticbeanstalk.com/customer/v1/customer:splat"
+  status = 200
+  force = true
+
+
+
+[[redirects]]
+  from = "/api/*"
+  to = "http://devansh-customer-be.eu-north-1.elasticbeanstalk.com/customer/v1/:splat"
+  status = 200
+  force = true
