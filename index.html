@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
-    <script type="module" crossorigin src="/assets/index-DYmicsqu.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Djsk3Pix.css">
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
+    <title>Document</title>
+</head>
+<body>
+    <section>
+      <div class="table">
+        <h1 id="h1"></h1>
+      </div>  
+    </section>
+</body>
 </html>
+<script>
+
+    let user = document.getElementById('h1')
+
+    fetch("http://devansh-customer-be.eu-north-1.elasticbeanstalk.com/customer/v1/customers")
+    .then((res) => res.json())
+    .then((data) => {
+        user.innerHTML = data[1]['firstName']
+    })
+    .catch((error) => console.log(error))
+</script>
